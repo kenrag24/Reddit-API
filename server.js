@@ -27,7 +27,7 @@ app.get("/reddit/:subreddit", function(req, res) {
         }
     }).catch(e => {
         console.log(e)
-        res.status(500).send({endpoint: req.params.subreddit, error: e+ "                                    This could also be because of an invalid subreddit"})
+        res.status(500).send({endpoint: req.params.subreddit, error: e+ "This could also be because of an invalid subreddit"})
     })
 })
 app.use(function(req, res) {
